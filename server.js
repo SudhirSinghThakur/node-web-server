@@ -51,6 +51,13 @@ app.get('/about', (req, res) =>{
   });
 });
 
+app.get('/contactUs', (req, res) =>{
+  res.render('contactUs.hbs', {
+    pageTitle : "Contact Us",
+    welcomeMessage : "Please Contact us : \n Email : sudhirthakur4@gmail.com \n Mobile No : 07411793462"
+  });
+});
+
 app.get('/home', (req, res) =>{
   res.send('<h1>Home Page!</h1>');
 });
